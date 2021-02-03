@@ -36,11 +36,10 @@ function shuffle(deck) {
   return deck;
 }
 
-// We have to create a bunch of variables:
 const firstDeck = initializeDeck();
 const drawnCards = [];
 shuffle(firstDeck);
-// We have to pass a ton of arguments around:
+
 const hand1 = drawMultiple(2, firstDeck, drawnCards);
 const hand2 = drawMultiple(2, firstDeck, drawnCards);
 const pokerHand = drawMultiple(5, firstDeck, drawnCards);
